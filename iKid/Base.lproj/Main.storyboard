@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7fP-OD-jQQ">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Q25-Q3-Oru">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="now.-thats-what-i-call-jokes.png" translatesAutoresizingMaskIntoConstraints="NO" id="fSj-kt-d5v">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="710"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.96078431610000004" green="0.98039215800000001" blue="0.98431372640000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Q25-Q3-Oru" secondAttribute="bottom" id="CGB-Mj-Uc4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q25-Q3-Oru" secondAttribute="trailing" id="FqN-Zy-9xB"/>
+                            <constraint firstItem="Q25-Q3-Oru" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LYh-ye-JVP"/>
+                            <constraint firstItem="Q25-Q3-Oru" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Oaf-Xm-1DP"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="LRh-JK-7Q9">
+                        <color key="badgeColor" red="0.60000002379999995" green="0.7254902124" blue="0.65098041299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2325.9541984732823" y="132.3943661971831"/>
+        </scene>
+        <!--Good-->
+        <scene sceneID="2GZ-7v-VhL">
+            <objects>
+                <viewController id="cjV-59-V47" customClass="GoodJokeViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L4y-8M-02O">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="center" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="mZd-cJ-r1r">
+                                <rect key="frame" x="16" y="91" width="361" height="646"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="good-joke-img-1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="oUe-FI-eWp">
+                                        <rect key="frame" x="30.666666666666657" y="0.0" width="300" height="550"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="332" id="0mf-du-j4e"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="332" id="jYi-xS-p5F"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmi-vb-nfc">
+                                        <rect key="frame" x="114.66666666666666" y="582" width="132" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="132" id="iI3-3V-wUx"/>
+                                            <constraint firstAttribute="height" constant="64" id="iv7-H5-zLn"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Next" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="28"/>
+                                            <color key="baseBackgroundColor" red="0.69019609689999994" green="0.78039217000000005" blue="0.78823530669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="ewtg:" destination="n30-jq-WWO" eventType="touchUpInside" id="ohA-7f-Vch"/>
+                                            <action selector="nextButtonClicked:" destination="cjV-59-V47" eventType="touchUpInside" id="y4l-4j-tcF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cmi-vb-nfc" firstAttribute="top" relation="lessThanOrEqual" secondItem="oUe-FI-eWp" secondAttribute="bottom" constant="32" id="N5k-cg-Bfp"/>
+                                    <constraint firstItem="cmi-vb-nfc" firstAttribute="top" relation="lessThanOrEqual" secondItem="oUe-FI-eWp" secondAttribute="bottom" constant="32" id="uHd-YH-6Tn"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oad-Px-qrq"/>
+                        <color key="backgroundColor" red="0.96078431610000004" green="0.98039215800000001" blue="0.98431372640000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="mZd-cJ-r1r" firstAttribute="top" secondItem="oad-Px-qrq" secondAttribute="top" constant="32" id="1DY-Fv-X4z"/>
+                            <constraint firstItem="mZd-cJ-r1r" firstAttribute="leading" secondItem="L4y-8M-02O" secondAttribute="leading" constant="16" id="35Q-fn-tfZ"/>
+                            <constraint firstAttribute="trailing" secondItem="mZd-cJ-r1r" secondAttribute="trailing" constant="16" id="CRv-tT-Go6"/>
+                            <constraint firstItem="oad-Px-qrq" firstAttribute="bottom" secondItem="mZd-cJ-r1r" secondAttribute="bottom" constant="32" id="IFh-bF-xKF"/>
+                            <constraint firstItem="mZd-cJ-r1r" firstAttribute="centerY" secondItem="L4y-8M-02O" secondAttribute="centerY" id="IIJ-ny-U9t"/>
+                            <constraint firstItem="mZd-cJ-r1r" firstAttribute="centerX" secondItem="L4y-8M-02O" secondAttribute="centerX" id="nBY-SY-woR"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Good" image="smiley.fill" catalog="system" id="o9C-qV-Tnf"/>
+                    <connections>
+                        <outlet property="jokeImg" destination="oUe-FI-eWp" id="Hcz-lf-1hJ"/>
+                        <outlet property="nextButton" destination="cmi-vb-nfc" id="FQk-vD-cK7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WmW-5s-Pbj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="n30-jq-WWO" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-1321.3740458015266" y="131.69014084507043"/>
+        </scene>
+        <!--Pun-->
+        <scene sceneID="vlZ-aQ-dxj">
+            <objects>
+                <viewController id="udr-j1-z95" customClass="PunJokeViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bUU-aa-tUw">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="L2G-hx-ohm">
+                                <rect key="frame" x="32" y="91" width="329" height="646"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pun-joke-img-1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dMd-Yg-mwb">
+                                        <rect key="frame" x="14.666666666666657" y="0.0" width="300" height="550"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="332" id="U5z-mz-2ty"/>
+                                            <constraint firstAttribute="width" constant="332" id="bum-Jt-xdk"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMs-OY-rfw">
+                                        <rect key="frame" x="98.666666666666657" y="582" width="132" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="NAC-85-heQ"/>
+                                            <constraint firstAttribute="width" constant="132" id="ONi-Fv-mx7"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Next" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="28"/>
+                                            <color key="baseBackgroundColor" red="0.69019609689999994" green="0.78039217000000005" blue="0.78823530669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="nextButtonClicked:" destination="udr-j1-z95" eventType="touchUpInside" id="mbF-OU-u8R"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="eMs-OY-rfw" firstAttribute="top" secondItem="dMd-Yg-mwb" secondAttribute="bottom" constant="32" id="vRH-v6-Spt"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="h2u-6i-pTf"/>
+                        <color key="backgroundColor" red="0.96078431610000004" green="0.98039215800000001" blue="0.98431372640000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="h2u-6i-pTf" firstAttribute="bottom" secondItem="L2G-hx-ohm" secondAttribute="bottom" constant="32" id="9GX-Dq-9Er"/>
+                            <constraint firstItem="L2G-hx-ohm" firstAttribute="top" secondItem="h2u-6i-pTf" secondAttribute="top" constant="32" id="FBA-U9-yXJ"/>
+                            <constraint firstItem="L2G-hx-ohm" firstAttribute="leading" secondItem="h2u-6i-pTf" secondAttribute="leading" constant="32" id="R1y-6e-Noe"/>
+                            <constraint firstItem="L2G-hx-ohm" firstAttribute="centerY" secondItem="bUU-aa-tUw" secondAttribute="centerY" id="Xue-aM-ddY"/>
+                            <constraint firstItem="L2G-hx-ohm" firstAttribute="centerX" secondItem="bUU-aa-tUw" secondAttribute="centerX" id="aht-iu-JXt"/>
+                            <constraint firstItem="h2u-6i-pTf" firstAttribute="trailing" secondItem="L2G-hx-ohm" secondAttribute="trailing" constant="32" id="nc7-Ut-fsf"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pun" image="fireworks" catalog="system" id="9i1-la-imN"/>
+                    <connections>
+                        <outlet property="jokeImg" destination="dMd-Yg-mwb" id="P40-kB-DDH"/>
+                        <outlet property="nextButton" destination="eMs-OY-rfw" id="nzk-pN-Sf7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mrc-ap-gLF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-312" y="132"/>
+        </scene>
+        <!--Dad-->
+        <scene sceneID="IcS-IC-vPX">
+            <objects>
+                <viewController id="Mf8-V0-r1F" customClass="DadJokeViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hP5-AN-dTH">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="kKi-iq-CVI">
+                                <rect key="frame" x="32" y="91" width="329" height="646"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dad-joke-img-1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zm3-MH-0Fp">
+                                        <rect key="frame" x="14.666666666666657" y="0.0" width="300" height="550"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="332" id="T1l-MQ-7qL"/>
+                                            <constraint firstAttribute="height" constant="332" id="rT4-LP-Cpx"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aV6-tK-7EE">
+                                        <rect key="frame" x="98.666666666666657" y="582" width="132" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="132" id="V1O-8j-xoa"/>
+                                            <constraint firstAttribute="height" constant="64" id="rcY-d9-g8b"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Next" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="28"/>
+                                            <color key="baseBackgroundColor" red="0.69019609689999994" green="0.78039217000000005" blue="0.78823530669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="nextButtonClicked:" destination="Mf8-V0-r1F" eventType="touchUpInside" id="zHz-hq-V7J"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="aV6-tK-7EE" firstAttribute="top" secondItem="zm3-MH-0Fp" secondAttribute="bottom" constant="32" id="hf3-jd-o4p"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mTh-jD-4Z9"/>
+                        <color key="backgroundColor" red="0.96078431610000004" green="0.98039215800000001" blue="0.98431372640000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="mTh-jD-4Z9" firstAttribute="trailing" secondItem="kKi-iq-CVI" secondAttribute="trailing" constant="32" id="2vc-bd-F8w"/>
+                            <constraint firstItem="kKi-iq-CVI" firstAttribute="centerX" secondItem="hP5-AN-dTH" secondAttribute="centerX" id="74w-JM-T12"/>
+                            <constraint firstItem="kKi-iq-CVI" firstAttribute="top" secondItem="mTh-jD-4Z9" secondAttribute="top" constant="32" id="DHA-YC-ywe"/>
+                            <constraint firstItem="kKi-iq-CVI" firstAttribute="leading" secondItem="mTh-jD-4Z9" secondAttribute="leading" constant="32" id="ah9-dh-Cpk"/>
+                            <constraint firstItem="mTh-jD-4Z9" firstAttribute="bottom" secondItem="kKi-iq-CVI" secondAttribute="bottom" constant="32" id="fwh-Jh-KUU"/>
+                            <constraint firstItem="kKi-iq-CVI" firstAttribute="centerY" secondItem="hP5-AN-dTH" secondAttribute="centerY" id="wWW-2R-6Y7"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dad" image="figure.walk.circle.fill" catalog="system" id="IgD-AX-s79"/>
+                    <connections>
+                        <outlet property="jokeImg" destination="zm3-MH-0Fp" id="uyO-0G-2YK"/>
+                        <outlet property="nextButton" destination="aV6-tK-7EE" id="248-Vw-EpS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S0s-rm-iiO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="778" y="132"/>
+        </scene>
+        <!--Knock-Knock-->
+        <scene sceneID="PSe-tI-a9d">
+            <objects>
+                <viewController id="Tbr-SC-vh2" customClass="KnockKnockJokeViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8SS-kk-rPe">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="MAi-24-nN6">
+                                <rect key="frame" x="32" y="91" width="329" height="646"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Knock Knock!!!! 🚪✊🏼🚪✊🏼" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KrU-pY-cx7">
+                                        <rect key="frame" x="9.3333333333333428" y="0.0" width="310.33333333333326" height="550"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <color key="textColor" red="0.60000002379999995" green="0.7254902124" blue="0.65098041299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SfD-jb-rn0">
+                                        <rect key="frame" x="98.666666666666657" y="582" width="132" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="paY-7R-t7S"/>
+                                            <constraint firstAttribute="width" constant="132" id="u3o-RK-a3e"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Next" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="28"/>
+                                            <color key="baseBackgroundColor" red="0.69019609689999994" green="0.78039217000000005" blue="0.78823530669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="nextButtonClicked:" destination="Tbr-SC-vh2" eventType="touchUpInside" id="Wxi-QP-NNg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="SfD-jb-rn0" firstAttribute="top" secondItem="KrU-pY-cx7" secondAttribute="bottom" constant="31.999999999999982" id="CbO-p8-nVb"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ivv-Kp-vF9"/>
+                        <color key="backgroundColor" red="0.96078431610000004" green="0.98039215800000001" blue="0.98431372640000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="MAi-24-nN6" firstAttribute="centerY" secondItem="8SS-kk-rPe" secondAttribute="centerY" id="RVi-4u-SX9"/>
+                            <constraint firstItem="ivv-Kp-vF9" firstAttribute="trailing" secondItem="MAi-24-nN6" secondAttribute="trailing" constant="32" id="SKG-gu-giu"/>
+                            <constraint firstItem="MAi-24-nN6" firstAttribute="top" secondItem="ivv-Kp-vF9" secondAttribute="top" constant="32" id="US3-hX-7VJ"/>
+                            <constraint firstItem="MAi-24-nN6" firstAttribute="centerX" secondItem="8SS-kk-rPe" secondAttribute="centerX" id="fsX-kn-M1a"/>
+                            <constraint firstItem="MAi-24-nN6" firstAttribute="leading" secondItem="ivv-Kp-vF9" secondAttribute="leading" constant="32" id="je7-0b-qFe"/>
+                            <constraint firstItem="ivv-Kp-vF9" firstAttribute="bottom" secondItem="MAi-24-nN6" secondAttribute="bottom" constant="32" id="mce-yD-0xi"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Knock-Knock" image="door.left.hand.closed" catalog="system" id="h81-Nv-ThA"/>
+                    <connections>
+                        <outlet property="jokeLabel" destination="KrU-pY-cx7" id="KPM-GA-l9E"/>
+                        <outlet property="nextButton" destination="SfD-jb-rn0" id="z1X-b3-bjX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ohM-4B-9dX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1673" y="132"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="J9D-ah-OMS">
+            <objects>
+                <tabBarController id="7fP-OD-jQQ" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TDx-kA-9xi">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.60000002379999995" green="0.7254902124" blue="0.65098041299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.60000002379999995" green="0.7254902124" blue="0.65098041299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="0.60000002379999995" green="0.7254902124" blue="0.65098041299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="FgN-N1-UpH"/>
+                        <segue destination="cjV-59-V47" kind="relationship" relationship="viewControllers" id="8Sn-bi-UPh"/>
+                        <segue destination="udr-j1-z95" kind="relationship" relationship="viewControllers" id="gUV-mU-Gy4"/>
+                        <segue destination="Mf8-V0-r1F" kind="relationship" relationship="viewControllers" id="yZO-Mc-bTM"/>
+                        <segue destination="Tbr-SC-vh2" kind="relationship" relationship="viewControllers" id="qeh-Mx-rtf"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="La4-1F-v9S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-828" y="-639"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dad-joke-img-1.jpg" width="300" height="300"/>
+        <image name="door.left.hand.closed" catalog="system" width="108" height="128"/>
+        <image name="figure.walk.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="fireworks" catalog="system" width="128" height="111"/>
+        <image name="good-joke-img-1.jpg" width="300" height="300"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="now.-thats-what-i-call-jokes.png" width="1024" height="1024"/>
+        <image name="pun-joke-img-1.jpg" width="300" height="300"/>
+        <image name="smiley.fill" catalog="system" width="128" height="123"/>
+    </resources>
+</document>
